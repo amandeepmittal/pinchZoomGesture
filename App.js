@@ -1,5 +1,6 @@
 import React from 'react'
 import { Image, View, Dimensions } from 'react-native'
+import Animated from 'react-native-reanimated'
 
 const { width } = Dimensions.get('window')
 
@@ -8,7 +9,7 @@ const { width } = Dimensions.get('window')
 const App = () => {
   return (
     <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-      <Image
+      <Animated.Image
         source={{
           uri: 'https://miro.medium.com/max/1080/1*7SYuZvH2pZnM0H79V4ttPg.jpeg'
         }}
